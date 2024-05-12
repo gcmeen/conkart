@@ -5,7 +5,6 @@
       src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
       class="profile-img-card"
     />
-    @if (!isLoggedIn) {
     <form
       name="form"
       (ngSubmit)="f.form.valid && onSubmit()"
@@ -60,9 +59,6 @@
         </div>
         }
       </div>
-    </form>
-    } @else {
-    <div class="alert alert-success">Logged in as {{ roles }}.</div>
-    }
+    </form>  
   </div>
 </div>
